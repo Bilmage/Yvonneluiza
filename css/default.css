@@ -802,45 +802,23 @@ properly.
 	text-align: center !important;
 }
 
-footer .available-wrap {
-   padding-bottom: 30px; }
-   footer .available-wrap .available-tag {
-     font-size: 16px;
-     line-height: 30px;
-     font-weight: 500;
-     letter-spacing: -0.5;
-     color: #fff;
-     display: block;
-     float: left; }
-   footer .available-wrap .available-pointer {
-     background: #c8a482 none repeat scroll 0 0;
-     position: relative;
-     display: inline-block;
-     float: left;
-     width: 14px;
-     height: 14px;
-     margin-left: 8px;
-     margin-right: 32px;
-     margin-top: 7px;
-     border-radius: 50%;
-     float: left;
-     -webkit-animation-name: flash;
-     animation-name: flash;
-     -webkit-animation-duration: 1s;
-     animation-duration: 1s;
-     -webkit-animation-iteration-count: infinite;
-     animation-iteration-count: infinite;
-     content: ' '; }
-     footer .available-wrap .available-pointer:before {
-       background-color: #c8a482;
-       content: ' ';
-       position: absolute;
-       top: -8px;
-       left: -8px;
-       display: inline-block;
-       width: 30px;
-       height: 30px;
-       opacity: 0.2;
-       border-radius: 50%; }
+.glow {
+   font-size: 16px;
+   color: #fff;
+   text-align: center;
+   -webkit-animation: glow 1s ease-in-out infinite alternate;
+   -moz-animation: glow 1s ease-in-out infinite alternate;
+   animation: glow 1s ease-in-out infinite alternate;
+ }
+ 
+ @-webkit-keyframes glow {
+   from {
+     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #11ABB0;, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+   }
+   
+   to {
+     text-shadow: 0 0 20px #fff, 0 0 30px #11ABB0;, 0 0 40px #11ABB0;, 0 0 50px #11ABB0;, 0 0 60px #11ABB0;, 0 0 70px #11ABB0;, 0 0 80px #11ABB0;;
+   }
+ }
 
 
